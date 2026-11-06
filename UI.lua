@@ -165,7 +165,11 @@ local function CreateWindow()
 
 	frame.TitleText:SetText("Fishermans' Friend")
 
-	local inset = frame.Inset
+	-- Anchored directly to the window: the template's own Inset has no
+	-- position on every client, which left the contents at the screen corner.
+	local inset = CreateFrame("Frame", nil, frame)
+	inset:SetPoint("TOPLEFT", frame, "TOPLEFT", 8, -28)
+	inset:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -8, 8)
 
 	frame.skillLabel = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 	frame.skillLabel:SetPoint("TOPLEFT", inset, "TOPLEFT", PADDING, -PADDING)
