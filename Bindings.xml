@@ -1,0 +1,6 @@
+<Bindings>
+	<Binding name="FISHERMANSFRIEND_EQUIPPOLE" header="FISHERMANSFRIEND" category="ADDONS">
+		FishermansFriend_EquipPole()
+	</Binding>
+	<Binding name="CLICK FishermansFriendCastButton:LeftButton" category="ADDONS"/>
+</Bindings>

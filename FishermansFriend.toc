@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Fishermans' Friend
+## Notes: Tracks your Fishing skill and catches, with hotkeys to equip a pole and cast.
+## Version: 1.0.0
+## SavedVariablesPerCharacter: FishermansFriendDB
+
+Core.lua
+UI.lua
